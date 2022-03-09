@@ -202,6 +202,8 @@ function M.parse_mappings(mappings, value, prefix)
           mapping.mode = v
         elseif k == "expr" then
           mapping.opts.expr = v
+        elseif k == "nowait" then
+          mapping.opts.nowait = v
         elseif k == "plugin" then
           mapping.group = true
           mapping.plugin = v
